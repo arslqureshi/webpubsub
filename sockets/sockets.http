@@ -1,0 +1,6 @@
+@sockets_HostAddress = http://localhost:5142
+
+GET {{sockets_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
