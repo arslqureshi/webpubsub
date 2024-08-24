@@ -48,3 +48,4 @@ C:\Users\PC\Desktop\dotnet core\sockets\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\PC\Desktop\dotnet core\sockets\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\PC\Desktop\dotnet core\sockets\bin\Debug\net8.0\Microsoft.Azure.WebPubSub.AspNetCore.dll
 C:\Users\PC\Desktop\dotnet core\sockets\bin\Debug\net8.0\Microsoft.Azure.WebPubSub.Common.dll
+C:\Users\PC\Desktop\dotnet core\sockets\obj\Debug\net8.0\sockets.sourcelink.json

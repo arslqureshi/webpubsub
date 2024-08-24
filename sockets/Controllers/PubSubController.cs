@@ -5,6 +5,7 @@ using Microsoft.Azure.WebPubSub.AspNetCore;
 using Microsoft.Extensions.Primitives;
 using sockets.DataService;
 using sockets.Hubs;
+using sockets.Models;
 
 namespace sockets.Controllers
 {
@@ -44,6 +45,17 @@ namespace sockets.Controllers
             {
                 from = "Id",
                 message = "Message from Backend"
+            }),
+            ContentType.ApplicationJson);
+        }
+
+        [HttpPost("/send-message")]
+        public async Task SendMessage(PubSubMessage body)
+        {
+            await service.SendToConnectionAsync(body.ToId, RequestContent.Create(
+            new
+            {
+                message = body.Message,
             }),
             ContentType.ApplicationJson);
         }
